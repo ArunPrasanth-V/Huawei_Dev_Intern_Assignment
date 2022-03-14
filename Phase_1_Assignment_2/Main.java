@@ -59,32 +59,15 @@ public class Main {
     //	 arr[1]  intrest
 	   if(amount<10000)
 	   {
-		   
-	   }
-	   else if(amount<10000)
-	   {
-		   
-	   }
-	   else if(amount<10000)
-	   {
-		   
-	   }
-	   else if(amount<10000)
-	   {
-		   
-	   }
-	   else if(amount<10000)
-	   {
-		   
-	   }
-	   else if(amount<10000)
-	   {
-		   
+		   arr[0]=6;
+		   arr[1]=amount*.02;
 	   }
 	   else
 	   {
-		   
+		   arr[0]=6;
+		   arr[1]=amount*.04;
 	   }
 	   return arr;
    }
+	   
 }
