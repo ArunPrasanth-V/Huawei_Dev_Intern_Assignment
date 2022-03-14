@@ -1,5 +1,4 @@
-package Bank;
-
+package Phase_2_Assignment_1 ;
 import java.util.ArrayList;
 
 public class Bank {
