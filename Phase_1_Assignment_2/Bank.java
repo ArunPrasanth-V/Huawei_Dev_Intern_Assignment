@@ -1,37 +1,44 @@
-package Phase_2_Assignment_1 ;
+package Bank;
 
-public class User {
-	   // POJO for user
-   private String userName;
-   private  String bankName;
-   private String LoanType;
-   private double loanAmount;
-   private double goldGram;
-   private double intrest;
-   private double repay;
-   private boolean isGoldLoan;
-public User(String userName, String bankName, String loanType, double loanAmount, double goldGram, double intrest,double repay,boolean isGoldLoan) {
-	super();
-	this.userName = userName;
-	this.bankName = bankName;
-	LoanType = loanType;
-	this.loanAmount = loanAmount;
-	this.goldGram = goldGram;
-	this.intrest = intrest;
-	this.repay=repay;
-	this.isGoldLoan=isGoldLoan;
-}
+import java.util.ArrayList;
 
-
-
-@Override
-public String toString() {
-	if(!isGoldLoan)
-	return "userName=" + userName + ", bankName=" + bankName + ", LoanType=" + LoanType + ", loanAmount($)="
-			+ loanAmount + " , intrest=" + intrest ;
+public class Bank {
 	
-	return "userName=" + userName + ", bankName=" + bankName + ", LoanType=" + LoanType + ", loanAmount($)="
-	+ loanAmount + ", goldGram=" + goldGram + ", intrest=" + intrest ;
-}
-
+	static ArrayList<String> banks=new ArrayList<>();
+	static{
+		banks.add("Royal Bank of Canada.");
+		banks.add("Bank of Montreal");
+		banks.add("Bank of Nova Scotia.");
+		banks.add("Canadian Imperial Bank of Commerce");
+		banks.add("Toronto Dominion Bank");
+		banks.add("Canadian Banks");
+	}
+	private String bankName;
+	private String LoanType;
+	private String userName;
+	private double loanamount;
+	
+	public Bank(String bankName, String loanType, String userName, double loanamount) {
+		super();
+		this.bankName = bankName;
+		LoanType = loanType;
+		this.userName = userName;
+		this.loanamount = loanamount;
+	}
+	public boolean addBank(String name) {
+		if(!banks.contains(name))
+		{
+			banks.add(name);
+			return true;
+		}
+		return false;
+	}
+	public static void BankName()
+	{
+		
+		for(int i=0;i<banks.size();i++)
+		{
+			System.out.println(i+1+") "+banks.get(i));
+		}
+	}
 }
