@@ -1,4 +1,4 @@
-package Huawei dev Assignment.Phase 2 Assignment 1 ;
+package Phase_2_Assignment_1 ;
 
 import java.util.ArrayList;
 

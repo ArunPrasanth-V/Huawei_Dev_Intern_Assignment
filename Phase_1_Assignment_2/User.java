@@ -1,7 +1,7 @@
-package Huawei dev Assignment.Phase 2 Assignment 1 ;
+package Phase_2_Assignment_1 ;
 
 public class User {
-	   // POJO for user
+	   // POJO for User
    private String userName;
    private  String bankName;
    private String LoanType;
