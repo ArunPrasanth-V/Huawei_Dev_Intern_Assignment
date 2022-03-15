@@ -1,4 +1,4 @@
-package Phase_2_Assignment_1 ;
+package Phase_2_Assignment_2 ;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -41,9 +41,11 @@ public class Main {
 	   //Predict the Period of Repay
 	    double iar[]=getIntrestRepayMonth(amount);
 	    
+	    System.out.println("Enter the Month require to repay :");
+	    iar[0]=scan.nextDouble();
 	    
 	    //add the user details in arrayList DataType: user
-	    User user = new User(username, bankName, LoanName, amount,  grams,iar[0],iar[1],goldLoan);
+	    User user = new User(username, bankName, LoanName, amount,  grams,iar[1],iar[0],goldLoan);
 	    user.toString();
 	    users.add(user);
 	    
@@ -53,8 +55,10 @@ public class Main {
    }  
    public static double[] getIntrestRepayMonth(double amount)
    {
-	   
 	   double arr[]=new double[2];
+	  
+	   
+	  
      //	 arr[0]  repayMonth
     //	 arr[1]  intrest
 	   if(amount<10000)
@@ -69,5 +73,4 @@ public class Main {
 	   }
 	   return arr;
    }
-	   
 }
