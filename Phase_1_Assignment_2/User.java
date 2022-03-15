@@ -1,7 +1,8 @@
-package Phase_2_Assignment_1 ;
+package Phase_1_Assignment_2;
+;
 
 public class User {
-	   // POJO for User
+	   // POJO for user
    private String userName;
    private  String bankName;
    private String LoanType;
@@ -27,11 +28,11 @@ public User(String userName, String bankName, String loanType, double loanAmount
 @Override
 public String toString() {
 	if(!isGoldLoan)
-	return "userName=" + userName + ", bankName=" + bankName + ", LoanType=" + LoanType + ", loanAmount($)="
-			+ loanAmount + " , intrest=" + intrest ;
+	return "****"+bankName+"***\n"+"UserName = " + userName +"\nLoanType = " + LoanType + "\nLoanAmount($) = "
+			+ loanAmount + "\nIntrest = " + intrest +"\nRepay = "+repay+" month";
 	
-	return "userName=" + userName + ", bankName=" + bankName + ", LoanType=" + LoanType + ", loanAmount($)="
-	+ loanAmount + ", goldGram=" + goldGram + ", intrest=" + intrest ;
+	return "****"+bankName+"***\n"+"userName="+ "userName = " + userName + "\nLoanType=" + LoanType + "\nLoanAmount($)="
+	+ loanAmount + "\nGoldGram = " + goldGram + "\nIntrest = " + intrest+"\nRepay = "+repay+" month";
 }
 
 }
