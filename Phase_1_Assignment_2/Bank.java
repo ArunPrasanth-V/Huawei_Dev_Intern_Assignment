@@ -1,4 +1,5 @@
-package Phase_2_Assignment_1 ;
+package Phase_1_Assignment_2;
+
 import java.util.ArrayList;
 
 public class Bank {
@@ -13,24 +14,12 @@ public class Bank {
 		banks.add("Canadian Banks");
 	}
 	private String bankName;
-	private String LoanType;
-	private String userName;
-	private double loanamount;
 	
-	public Bank(String bankName, String loanType, String userName, double loanamount) {
+	public Bank(String bankName) {
 		super();
-		this.bankName = bankName;
-		LoanType = loanType;
-		this.userName = userName;
-		this.loanamount = loanamount;
-	}
-	public boolean addBank(String name) {
-		if(!banks.contains(name))
-		{
-			banks.add(name);
-			return true;
-		}
-		return false;
+		this.bankName=bankName;
+			banks.add(bankName);
+
 	}
 	public static void BankName()
 	{
